@@ -21,7 +21,7 @@ class BookView(APIView):
     def get(self, request, *args, **kwargs):
         return Response(
             {
-                "hello": ""
+                "hello": "django"
             }
         )
     
