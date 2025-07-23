@@ -15,7 +15,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       
-      - uses: ./.github/actions/install-dependencies.yml
+      - uses: ./.github/actions/install-dependencies
 
       - name: Run pytest
         run: pytest
@@ -27,7 +27,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       
-      - uses: ./.github/actions/install-dependencies.yml
+      - uses: ./.github/actions/install-dependencies
 
       - name: Run djago migrate
         run: python manage.py migrate
@@ -40,7 +40,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       
-      - uses: ./.github/actions/install-dependencies.yml
+      - uses: ./.github/actions/install-dependencies
 
       - name: Run runmigrations
         run: python manage.py makemigrations --check
